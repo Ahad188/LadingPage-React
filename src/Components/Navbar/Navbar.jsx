@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
             <div className='hidden md:flex'>
-                <button className='flex justify-between items-center  bg-transparent  px-6 gap-2'>
+                <button className='flex justify-between items-center  bg-transparent text-2xl  px-6 gap-2'>
                     <img src={lock} />
                     Login
                 </button>
@@ -40,13 +40,13 @@ const Navbar = () => {
 
         <div className={toggle?'absolute z-10 p-4  bg-white w-full px-8 md:hidden border-b':'hidden'}>
             <ul>
-                    <li className='p-4 hover:bg-gray-100 '>Home</li>
-                    <li className='p-4 hover:bg-gray-100 '>About</li>
-                    <li className='p-4 hover:bg-gray-100 '>Support</li>
-                    <li className='p-4 hover:bg-gray-100 '>Platform</li>
-                    <li className='p-4 hover:bg-gray-100 '>Pricing</li>
+                    <li className='p-4 hover:bg-[#20B486] hover:text-[#FFF] '>Home</li>
+                    <li className='p-4 hover:bg-[#20B486] hover:text-[#FFF]'>About</li>
+                    <li className='p-4 hover:bg-[#20B486] hover:text-[#FFF]'>Support</li>
+                    <li className='p-4 hover:bg-[#20B486] hover:text-[#FFF]'>Platform</li>
+                    <li className='p-4 hover:bg-[#20B486] hover:text-[#FFF]'>Pricing</li>
                     <div className='flex flex-col my-4 gap-4'>
-                        <button className='border border-[20B486] flex justify-center items-center  bg-transparent  px-6 gap-2 py-4'>
+                        <button className='border border-b-[#309a78] flex justify-center items-center  bg-transparent  px-6 gap-2 py-4'>
                          <img src={lock} />
                          Login
                         </button>
