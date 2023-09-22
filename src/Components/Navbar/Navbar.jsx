@@ -6,17 +6,17 @@ const Navbar = () => {
      const handleClick = ()=> setToggle(!toggle)
      return (
           <div className='w-full h-[80px] bg-white border-b'>
-        <div className='md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex justify-between items-center md:px-0 px-4'>
+        <div className='md:max-w-[1240px] max-w-[600px] m-auto w-full h-full flex justify-between items-center md:px-0 px-4'>
             
             <img src={logo} className="h-[25px]" />
             
             <div className='hidden md:flex items-center '>
                 <ul className='flex gap-4'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Support</li>
-                    <li>Platform</li>
-                    <li>Pricing</li>
+                    <li className="hover:text-[#20B486] cursor-pointer text-2xl">Home</li>
+                    <li className="hover:text-[#20B486] cursor-pointer text-2xl">About</li>
+                    <li className="hover:text-[#20B486] cursor-pointer text-2xl">Support</li>
+                    <li className="hover:text-[#20B486] cursor-pointer text-2xl">Platform</li>
+                    <li className="hover:text-[#20B486] cursor-pointer text-2xl">Pricing</li>
                 </ul>
             </div>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
                     <img src={lock} />
                     Login
                 </button>
-                <button className='px-8 py-3 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button>
+                {/* <button className='px-8 py-3 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button> */}
             </div>
 
             <div className='md:hidden'  onClick={handleClick}>
@@ -40,17 +40,17 @@ const Navbar = () => {
 
         <div className={toggle?'absolute z-10 p-4  bg-white w-full px-8 md:hidden border-b':'hidden'}>
             <ul>
-                    <li className='p-4 hover:bg-gray-100'>Home</li>
-                    <li className='p-4 hover:bg-gray-100'>About</li>
-                    <li className='p-4 hover:bg-gray-100'>Support</li>
-                    <li className='p-4 hover:bg-gray-100'>Platform</li>
-                    <li className='p-4 hover:bg-gray-100'>Pricing</li>
+                    <li className='p-4 hover:bg-gray-100 '>Home</li>
+                    <li className='p-4 hover:bg-gray-100 '>About</li>
+                    <li className='p-4 hover:bg-gray-100 '>Support</li>
+                    <li className='p-4 hover:bg-gray-100 '>Platform</li>
+                    <li className='p-4 hover:bg-gray-100 '>Pricing</li>
                     <div className='flex flex-col my-4 gap-4'>
                         <button className='border border-[20B486] flex justify-center items-center  bg-transparent  px-6 gap-2 py-4'>
                          <img src={lock} />
                          Login
                         </button>
-                        <button className='px-8 py-5 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button>
+                        {/* <button className='px-8 py-5 rounded-md bg-[#20B486] text-white font-bold'>Sign Up For Free</button> */}
                     </div>
             </ul>
         </div>
