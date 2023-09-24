@@ -1,5 +1,7 @@
  
 import './App.css'
+import Achievement from './Components/Achievement/Achievement'
+import Categories from './Components/Categories/Categories'
 import Companies from './Components/Companies/Companies'
 import Coerces from './Components/Courses/Cources'
 import Hero from './Components/Hero/Hero'
@@ -14,6 +16,8 @@ function App() {
       <Hero/>
       <Companies/>
       <Coerces/>
+      <Achievement/>
+      <Categories/>
     </>
   )
 }
